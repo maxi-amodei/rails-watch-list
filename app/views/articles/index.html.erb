@@ -54,3 +54,13 @@
     </div>
   </div>
 </div>
+
+<!-- app/views/articles/index.html.erb -->
+<%= cl_image_tag("hv9hdnwjwfz4tiqswyul",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("iuqlmnv9yhn174z6cter",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
+      <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
